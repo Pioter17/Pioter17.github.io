@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8">
+        <title>Saper</title>
+        <link rel="stylesheet" href="saper.css" type="text/css">
+    </head>
+    <body>
+        <header><h1>Saper</h1></header>
+        <main>
+            <article>
+                <div class="container">
+                    <div id="board">Wybierz rodzaj planszy:<br><br><span class="level" id="lev1">Mała</span>
+                    <span class="level" id="lev2">Duża</span><br><br>% pól z bombami<br><input id="slider" type="range" value="10" max="30" min="1"><br>
+                    <span id="bombs_nr"></span>
+                </div>
+                    <div id="flags"></div>
+                    <div id="timer"></div>
+                    <div style="clear: both;"></div>
+                </div>
+            </article>
+        </main>
+        <script src="jquery-3.6.1.min.js"></script>
+        <script async src="saper.js" type="text/javascript"></script>
+    </body>
+</html>

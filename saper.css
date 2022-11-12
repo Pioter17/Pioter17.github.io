@@ -1,0 +1,170 @@
+/* Dostosowywanie pasków przewijania */
+
+/*body::-webkit-scrollbar 
+{
+    width: 13px;
+    height: 13px;
+}
+
+body::-webkit-scrollbar-track
+{
+    background-color: rgb(123, 255, 0);
+    -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.8);
+}
+
+body::-webkit-scrollbar-corner
+{
+    background-color: rgb(123, 255, 0);
+}
+
+body::-webkit-scrollbar-button
+{
+    background-color: rgb(123, 255, 0);
+}
+
+
+body::-webkit-scrollbar-thumb
+{
+    background-color: brown;
+    border-radius: 20px;
+    -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.8);
+}
+*/
+
+body
+{
+    background-color: teal;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 36px;
+}
+
+.container
+{
+    width: 750px;
+    height: 500px;
+    
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+#board
+{
+    align-content: center;
+    font-size: 48px;
+    min-width: 750px;
+    min-height: 480px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.field
+{
+    box-sizing: border-box;
+    border: 1px solid #00000050;
+    float: left;
+    background-image: url("img/hidden.png");
+    width: 30px;
+    filter: brightness(90%);
+    height: 30px;
+}
+
+.field_flag
+{
+    box-sizing: border-box;
+    border: 1px solid #00000050;
+    float: left;
+    background-image: url("img/flag.png");
+    width: 30px;
+    filter: brightness(100%);
+    height: 30px;
+}
+
+.field:hover
+{
+    filter: brightness(100%);
+}
+
+.level
+{
+    margin: 30px;
+    cursor: pointer;
+}
+
+.level:hover
+{
+    font-weight: bold;
+    color: bisque;
+}
+
+#slider
+{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    opacity: 0.7;
+    transform: opacity .2s;
+    margin: 30px;
+    font-size: 28px;
+    border-radius: 20px;
+    padding: 5px;
+    width: 90%;
+    height: 15px;
+    background-color: blue;
+}
+
+#slider:hover
+{
+    opacity: 1;
+}
+
+#slider::-webkit-slider-thumb
+{
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background-color: yellow;
+    cursor: pointer;
+}
+
+#slider::-moz-range-thumb
+{
+    width: 25px;
+    height: 25px;
+    background-color: yellow;
+    cursor: pointer;
+}
+
+#flags
+{
+    float: left;
+    width: 375px;
+    min-height: 75px;
+    text-align: center;
+}
+
+#timer
+{
+    float: left;
+    width: 375px;
+    min-height: 75px;
+    text-align: center;
+}
+
+.reset
+{
+    font-size: 42px;
+}
+
+.reset:hover
+{
+    color:bisque;
+    text-decoration: underline;
+    cursor: pointer;
+}
